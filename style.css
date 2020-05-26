@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+body {
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 20px;
+  border: 3px solid black;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: 1000;
+  background: linear-gradient(to top, salmon 35%, transparent 35%);
+}
+a:hover {
+  background: linear-gradient(to top, salmon 100%, transparent 100%);
+}
+
+svg.blob {
+  height: 300px;
+  width: 300px;
+  opacity: .3;
+  position: absolute;
+  left: -0px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+img.favicon {
+  border-radius: 50%;
+}
+
+section.entries {
+  width: 100vw;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-around;
+  line-height: 1.5;
+}
+section.entries > article.entry {
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 1em 0 0.5em 0;
+}
+section.entries > article.entry > .date {
+  display: flex;
+  padding-right: 10px;
+  padding-top: 3px;
+  min-width: 80px;
+}
+section.entries > article.entry > .date:after {
+  font-family: "Font Awesome 5 Free";
+  content: " \f073";
+  padding-left: 3px;
+}
+section.entries > article.entry > .col {
+  flex-basis: 85%;
+}
+section.entries > article.entry > .col > .desc {
+  color: #888;
+}
+section.entries > article.entry > .col > .tech > ul.tech {
+  display: flex;
+}
+section.entries > article.entry > .col > .tech > ul.tech > li {
+  float: left;
+  padding-right: 10px;
+}
+section.entries > article.entry > .col > .obj ul.obj {
+  list-style: none;
+  padding: 0;
+}
+section.entries > article.entry > .col > .obj ul.obj > li {
+  padding-left: 1.3em;
+}
+section.entries > article.entry > .col > .obj ul.obj > li:before {
+  font-family: "Font Awesome 5 Free";
+  content: " \f044";
+  display: inline-block;
+  margin-left: -1.3em;
+  width: 1.3em;
+}
+
+.brand-icon:before {
+  font-family: "Font Awesome 5 Brands";
+}
+
+.HTML:before {
+  content: "\f13b ";
+  color: #e44e2a;
+}
+
+.SCSS:before {
+  content: "\f41e ";
+  color: #cc6699;
+}
+
+.JS:before {
+  content: "\f3b9 ";
+  color: #fac552;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.center {
+  text-align: center;
+  padding: 1em;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.1em;
+}
